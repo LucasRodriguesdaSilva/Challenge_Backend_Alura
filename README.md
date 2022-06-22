@@ -18,6 +18,13 @@ Implementação de base de dados para persistência das informações;
 Temos um período de tempo de 4 semanas para desenvolver o projeto. Nas 3 primeiras, teremos tarefas a serem feitas e a última semana para ajustes ou para completar as tarefas pendentes. 
 </p>
 
+## Ferramentas Utilizadas
+
+- Framework Laravel
+- BD Xampp
+- PHP
+- Insominia
+
 ## SEMANA 1
 
 - [x] Modelagem do banco de dados.
