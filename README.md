@@ -41,7 +41,7 @@ Temos um período de tempo de 4 semanas para desenvolver o projeto. Nas 3 primei
 - [x] Criação de uma endpoint para o resumo do mês.
 - [ ] Fazer testes automatizados.
 
-## SEMANA 3 e $
+## SEMANA 3 e 4
 
 - [ ] Criação de um mecanismo de autenticação da API.
 - [ ] Realização do Deploy da API.
