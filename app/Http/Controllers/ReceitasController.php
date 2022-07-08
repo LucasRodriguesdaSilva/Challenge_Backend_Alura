@@ -11,14 +11,14 @@ class ReceitasController extends Controller
     
     public function getAll(Request $res){
         if(!empty($res->all())){
-            $receita = Receita::select('valor', 'data', 'descricao')->where('descricao', 'LIKE', "%$res->descricao%")->get();
+            $receita = Receita::select('id','valor', 'data', 'descricao')->where('descricao', 'LIKE', "%$res->descricao%")->get();
             if(empty($receita))
                 return response()->json(['Receita não encontrada'],404);
             return response()->json($receita, 200);
             
         }
         
-        return response()->json(Receita::select('valor', 'data', 'descricao')->get(), 200);
+        return response()->json(Receita::select('id','valor', 'data', 'descricao')->get(), 200);
         
     }
 
