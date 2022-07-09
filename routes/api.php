@@ -38,7 +38,7 @@ Route::put('/despesas/{id}', [DespesasController::class, 'updateDespesa']);
 Route::delete('/receitas/{id}', [ReceitasController::class, 'deleteReceita']);
 Route::delete('/despesas/{id}', [DespesasController::class, 'deleteDespesa']);
 
-Route::post('/categoria/add', [CategoriaController::class, 'addCategoria']);
+Route::post('/categoria/criar', [CategoriaController::class, 'addCategoria']);
 Route::get('/categoria', [CategoriaController::class, 'getAll']);
 
 Route::get('receitas/{ano}/{mes}', [ReceitasController::class, 'getPorMes']);

@@ -11,7 +11,7 @@ class DespesasController extends Controller
     
     public function getAll(Request $res){
         if(!empty($res->all())){
-            $despesa = Despesa::with('Categoria')->select('descricao','data','valor','categoria')->where('descricao', 'LIKE', "%$res->descricao%")->get();
+            $despesa = Despesa::with('Categoria')->select('id','descricao','data','valor','id_categoria')->where('descricao', 'LIKE', "%$res->descricao%")->get();
             if(empty($despesa))
                 return response()->json(['Receita não encontrada'],404);
             return response()->json($despesa, 200);
